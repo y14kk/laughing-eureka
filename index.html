@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проверка б/у оборудования для HoReCa</title>
+    <!-- SEO Base -->
+  <meta name="description" content="Проверка б/у оборудования для HoReCa перед покупкой. Техническая диагностика, анализ рисков, помощь в переговорах и сопровождение сделки.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://broker.deal">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Проверка б/у оборудования для HoReCa">
+  <meta property="og:description" content="Проверка состояния, анализ рисков и сопровождение сделки при покупке б/у оборудования HoReCa.">
+  <meta property="og:url" content="https://broker.deal">
+  <meta property="og:image" content="https://broker.deal/preview.jpg">
+  
+  <!-- Twitter / Telegram preview -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Проверка б/у оборудования для HoReCa">
+  <meta name="twitter:description" content="Проверим оборудование перед покупкой и выявим скрытые дефекты.">
+  <meta name="twitter:image" content="https://broker.deal/preview.jpg">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Проверка б/у оборудования для HoReCa",
+      "provider": {
+        "@type": "Organization",
+        "name": "Broker.deal",
+        "url": "https://broker.deal"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Russia"
+      },
+      "serviceType": "Проверка и сопровождение сделки при покупке б/у оборудования HoReCa"
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#080C14;
+      --bg-card:#0D1520;
+      --bg-hi:#111D2E;
+      --border:rgba(255,255,255,.07);
+      --bmd:rgba(255,255,255,.13);
+      --t:#E8ECF1;
+      --t2:#9AAABB;
+      --t3:#5A6A7A;
+      --w:#FFF;
+      --green:#3ECF8E;
+      --red:#F05151;
+      --blue:#60a5fa;
+      --bdim:rgba(96,165,250,.10);
+      --bbdr:rgba(96,165,250,.22);
+      --callout-bg:#162030;
+    }
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Inter',-apple-system,sans-serif;
+      background:var(--bg);
+      color:var(--t);
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      overflow-x:hidden;
+      -webkit-tap-highlight-color:transparent;
+    }
+    nav{
+      position:fixed;top:0;left:0;right:0;z-index:200;height:58px;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:0 2rem;
+      background:rgba(8,12,20,.94);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+      border-bottom:1px solid var(--border);
+    }
+    .logo{font-size:1.1rem;font-weight:700;letter-spacing:-.02em;color:var(--t);text-decoration:none}
+    .logo em{font-style:normal;color:var(--t3);font-weight:400}
+    .logo-wrap{display:flex;align-items:center;gap:12px}
+    .tg-icon{
+      color:var(--t2);
+      transition:color .15s,background .15s;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      padding:7px;
+      border-radius:8px;
+      border:1px solid var(--bmd);
+      background:rgba(255,255,255,.04);
+      transform:none;
+    }
+    .tg-icon svg{display:block}
+    .tg-icon:hover{color:var(--t);background:rgba(255,255,255,.08)}
+    .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+    .nav-links a{font-size:.82rem;color:var(--t2);text-decoration:none;transition:color .15s}
+    .nav-links a:hover{color:var(--t)}
+    .nav-btn{
+      font-size:.82rem;font-weight:600;padding:8px 18px;border-radius:8px;
+      background:var(--w);color:#080C14;text-decoration:none;border:none;cursor:pointer;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.3),inset 0 -1px 0 rgba(0,0,0,.12),0 0 0 1px rgba(255,255,255,.1),0 4px 14px rgba(0,0,0,.4);
+      transition:opacity .15s,transform .15s;
+    }
+    .nav-btn:hover{opacity:.88;transform:translateY(-1px)}
+    .container{max-width:1100px;margin:0 auto;padding:0 2rem}
+    section{padding:88px 0;border-top:1px solid rgba(255,255,255,0.07)}
+    section:nth-of-type(1){background:var(--bg)}
+    section:nth-of-type(2){background:var(--bg)}
+    section:nth-of-type(3){background:var(--bg-card)}
+    section:nth-of-type(4){background:var(--bg)}
+    section:nth-of-type(5){background:var(--bg-card)}
+    section:nth-of-type(6){background:var(--bg)}
+    section:nth-of-type(7){background:var(--bg-card)}
+    section:nth-of-type(8){
+      background:linear-gradient(145deg,var(--bg-hi) 0%,#0A121F 100%);
+      border-bottom:1px solid rgba(255,255,255,0.07);
+    }
+    section:not(:last-of-type){padding-bottom:104px}
+    @media(max-width:600px){section:not(:last-of-type){padding-bottom:64px}}
+    .btn{
+      display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:9px;
+      font-size:.9rem;font-weight:600;font-family:inherit;cursor:pointer;border:none;text-decoration:none;
+      letter-spacing:-.01em;transition:all .18s cubic-bezier(.4,0,.2,1);
+    }
+    .btn-w{
+      background:var(--w);color:#080C14;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.3),inset 0 -1px 0 rgba(0,0,0,.12),0 0 0 1px rgba(255,255,255,.1),0 4px 18px rgba(0,0,0,.45);
+    }
+    .btn-w:hover{transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 0 0 1px rgba(255,255,255,.15),0 8px 26px rgba(0,0,0,.5)}
+    .btn-w:active{transform:translateY(0)}
+    .btn-g{
+      background:rgba(255,255,255,.06);color:var(--t);border:1px solid rgba(255,255,255,.18);
+    }
+    .btn-g:hover{color:var(--t);border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.1);transform:translateY(-1px)}
+    .arr{transition:transform .18s}
+    .btn-w:hover .arr{transform:translateX(3px)}
+    .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:58px;border-top:none}
+    .hero-bg{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 55% at 50% -5%,rgba(255,255,255,.042) 0%,transparent 65%),radial-gradient(ellipse 45% 40% at 85% 15%,rgba(255,255,255,.018) 0%,transparent 55%)}
+    .hero-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:60px 60px;mask-image:radial-gradient(ellipse 85% 65% at 50% 0%,black 0%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse 85% 65% at 50% 0%,black 0%,transparent 75%)}
+    .hero-inner{position:relative;z-index:1;max-width:760px}
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;padding:5px 14px;border-radius:100px;border:1px solid var(--bmd);background:rgba(255,255,255,.04);font-size:.78rem;font-weight:500;color:var(--t2);margin-bottom:2rem;letter-spacing:.01em;text-transform:uppercase;
+      margin-top:1rem;
+    }
+    .dot{width:6px;height:6px;border-radius:50%;background:var(--green);box-shadow:0 0 6px var(--green);animation:blink 2.5s ease-in-out infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+    .hero h1{font-size:clamp(2.3rem,4.8vw,3.8rem);font-weight:800;line-height:1.08;letter-spacing:-0.03em;color:var(--t);margin-bottom:1.5rem}
+    .hero h1 .dim{color:var(--t2)}
+    .hero-sub{font-size:1rem;line-height:1.8;color:var(--t2);max-width:490px;margin-bottom:2.5rem}
+    .hero-risk{font-size:.95rem;line-height:1.7;color:var(--t);font-weight:500;max-width:490px;margin-bottom:2.5rem;padding-left:1rem;border-left:2px solid var(--red)}
+    .hero-acts{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:4rem;border:1px solid var(--border);border-radius:14px;overflow:hidden;background:var(--border);gap:1px}
+    .hs{background:var(--bg-card);padding:1.4rem 1.75rem}
+    .hs-n{font-size:1.7rem;font-weight:800;letter-spacing:-.04em;color:var(--t);line-height:1}
+    .hs-l{font-size:.78rem;color:var(--t2);margin-top:5px}
+    h2{font-size:clamp(1.75rem,3.2vw,2.5rem);font-weight:800;letter-spacing:-0.03em;line-height:1.12;color:var(--t);margin-bottom:.9rem}
+    @media(max-width:600px){h2{font-size:1.6rem}}
+    .sub{font-size:.975rem;color:var(--t2);line-height:1.75;max-width:500px}
+    .pain-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:3rem;align-items:start}
+    .pain-text p{font-size:1rem;line-height:1.8;color:var(--t2);margin-bottom:1.2rem}
+    .pain-text p strong{color:var(--t)}
+    .callout{
+      background:var(--callout-bg);border:1px solid var(--bmd);border-radius:14px;padding:1.75rem;
+      position:relative;overflow:hidden;border-top:2px solid var(--red);
+    }
+    .callout p{font-size:1rem;line-height:1.8;color:var(--t2)}
+    .callout p strong{color:var(--t);font-weight:700}
+    .cl{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:.75rem}
+    .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+    .svc-card{
+      background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:1.75rem;
+      display:flex;flex-direction:column;position:relative;overflow:hidden;
+      transition:border-color 0.2s ease,background 0.2s ease,transform 0.3s ease,box-shadow 0.3s ease;
+      cursor:pointer;
+    }
+    .svc-card::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.06),transparent)}
+    .svc-card.hot{background:var(--bg-hi);border-color:var(--bmd)}
+    .svc-card.hot::before{background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent)}
+    @media (hover: hover) {
+      .svc-card:hover {
+        transform:translateY(-8px);
+        box-shadow:0 15px 35px rgba(0,0,0,.6);
+      }
+      .svc-card.hot:hover{border-color:var(--bmd)}
+    }
+    .sit{font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--t3);margin-bottom:1.1rem}
+    .sit.hi{color:var(--blue)}
+    .svc-name{font-size:1.05rem;font-weight:700;letter-spacing:-.02em;color:var(--t);margin-bottom:.5rem}
+    .svc-price{font-size:1.9rem;font-weight:800;letter-spacing:-.04em;color:var(--t);line-height:1;margin-bottom:1rem}
+    .svc-price span{font-size:.95rem;font-weight:500;color:var(--t2)}
+    .svc-hint{font-size:.78rem;color:var(--green);margin-bottom:1rem}
+    .svc-desc{font-size:.875rem;color:var(--t2);line-height:1.7;flex:1;margin-bottom:1.5rem;padding-bottom:1.5rem;border-bottom:1px solid var(--border)}
+    .svc-list{list-style:none;display:flex;flex-direction:column;gap:8px}
+    .svc-list li{display:flex;align-items:flex-start;gap:9px;font-size:.84rem;color:var(--t2);line-height:1.45}
+    .svc-list li::before{content:"✓";color:rgba(255,255,255,.28);font-size:.7rem;margin-top:2px;flex-shrink:0}
+    .svc-list li.svc-limit{color:var(--t3);font-style:italic;margin-top:4px;padding-top:12px;border-top:1px solid var(--border)}
+    .svc-list li.svc-limit::before{content:"—";color:var(--t3)}
+    .svc-tag{display:inline-block;margin-top:1.5rem;background:var(--bdim);border:1px solid var(--bbdr);border-radius:100px;padding:3px 11px;font-size:.7rem;font-weight:600;color:var(--blue)}
+    .carousel-wrap{position:relative;margin-top:3rem}
+    .carousel{display:flex;gap:1.5rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:1rem}
+    .carousel::-webkit-scrollbar{display:none}
+    .res-card{
+      min-width:320px;max-width:320px;scroll-snap-align:start;background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:1.75rem;display:flex;flex-direction:column;gap:.75rem;transition:transform 0.2s ease,border-color 0.2s ease;flex-shrink:0;
+      position:relative;z-index:1;
+    }
+    .res-card:hover{border-color:var(--bmd);box-shadow:0 8px 24px rgba(0,0,0,.45);z-index:10}
+    .res-type{font-size:.7rem;font-weight:600;color:var(--t3);text-transform:uppercase;letter-spacing:.07em}
+    .res-name{font-size:.95rem;font-weight:600;color:var(--t)}
+    .res-was{font-size:.8rem;color:var(--t3);text-decoration:line-through}
+    .res-got{font-size:1.55rem;font-weight:800;letter-spacing:-.035em;color:var(--t);line-height:1}
+    .res-badge{display:inline-flex;align-items:center;width:fit-content;background:rgba(62,207,142,.07);border:1px solid rgba(62,207,142,.18);border-radius:100px;padding:3px 10px;font-size:.7rem;font-weight:600;color:var(--green)}
+    .res-note{font-size:.84rem;color:var(--t2);line-height:1.6}
+    .carousel-nav{display:flex;gap:8px;margin-top:1.5rem}
+    .carousel-btn{background:var(--bg-card);border:1px solid var(--bmd);border-radius:8px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--t2);font-size:1rem;transition:background 0.2s,color 0.2s}
+    .carousel-btn:hover{background:var(--bg-hi);color:var(--t)}
+    @media (hover: none){.carousel-nav{display:none}}
+    .report-box{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-top:3rem}
+    .report-item{background:var(--bg-card);padding:1.75rem;display:flex;flex-direction:column;gap:.75rem}
+    .report-ico{font-size:1.4rem}
+    .report-txt{font-size:.9rem;color:var(--t2);line-height:1.7}
+    .report-txt strong{color:var(--t);display:block;margin-bottom:.25rem;font-size:.95rem}
+    .fw-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem}
+    .fw-card{background:var(--bg-card);border:1px solid var(--border);border-radius:14px;padding:1.5rem;display:flex;flex-direction:column;gap:.6rem;transition:border-color .2s}
+    .fw-card:hover{border-color:var(--bmd)}
+    .fw-ico{font-size:1.3rem;margin-bottom:.25rem}
+    .fw-title{font-size:.9rem;font-weight:600;color:var(--t);letter-spacing:-.01em}
+    .fw-desc{font-size:.84rem;color:var(--t2);line-height:1.65}
+    .fw-row{margin-top:2.5rem}
+    .fw-txt{font-size:1rem;font-weight:600;color:var(--t)}
+    .faq-item{border-bottom:1px solid var(--border)}
+    .faq-item:first-child{border-top:1px solid var(--border)}
+    .faq-q{display:flex;justify-content:space-between;align-items:center;padding:0.75rem 0;gap:1rem;font-size:.93rem;font-weight:500;color:var(--t);cursor:pointer;user-select:none;transition:color .15s}
+    .faq-q:hover{color:rgba(255,255,255,.8)}
+    .faq-item.active .faq-q{color:var(--t)}
+    .faq-item.active .plus{transform:rotate(45deg);background:rgba(255,255,255,.06)}
+    .plus{width:22px;height:22px;flex-shrink:0;border:1px solid var(--bmd);border-radius:6px;position:relative;transition:transform 0.22s ease,background 0.22s;pointer-events:none}
+    .plus::before,.plus::after{content:"";position:absolute;background:var(--t2);border-radius:1px;top:50%;left:50%;transform:translate(-50%,-50%)}
+    .plus::before{width:8px;height:1px}
+    .plus::after{width:1px;height:8px}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height 0.45s ease}
+    .faq-item.active .faq-a{max-height:600px}
+    .faq-a-inner{padding-bottom:1.15rem;font-size:.9rem;line-height:1.8;color:var(--t2);max-width:640px}
+    .faq-a-inner ul{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:.5rem}
+    .faq-a-inner ul li{display:flex;gap:8px;align-items:flex-start}
+    .faq-a-inner ul li::before{content:"→";color:var(--t3);font-size:.75rem;margin-top:2px;flex-shrink:0}
+    .cta-box{background:var(--bg-hi);border:1px solid var(--bmd);border-radius:20px;overflow:hidden}
+    .cta-head{padding:3rem 3rem 2rem;border-bottom:1px solid var(--border);position:relative}
+    .cta-head::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.14),transparent)}
+    .cta-head h2{margin-bottom:.6rem}
+    .cta-geo{font-size:.78rem;color:var(--green);margin-top:.5rem}
+    .form-body{padding:2rem 3rem 3rem}
+    .fg{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+    .ff{display:flex;flex-direction:column;gap:6px}
+    .ff.full{grid-column:1/-1}
+    label{font-size:.73rem;font-weight:500;color:var(--t2);letter-spacing:.02em}
+    input,select,textarea{
+      background:var(--bg);border:1px solid var(--bmd);border-radius:8px;padding:11px 14px;
+      font-size:.875rem;color:var(--t);font-family:inherit;outline:none;width:100%;
+      transition:border-color .15s,box-shadow .15s;-webkit-appearance:none;appearance:none;
+    }
+    input::placeholder,textarea::placeholder{color:var(--t3)}
+    input:focus,select:focus,textarea:focus{border-color:rgba(255,255,255,.24);box-shadow:0 0 0 3px rgba(255,255,255,.04)}
+    select{cursor:pointer}
+    textarea{resize:vertical;min-height:80px}
+    .fsub{margin-top:16px;width:100%;justify-content:center;font-size:.92rem;padding:14px 24px}
+    .fresponse{margin-top:.6rem;font-size:.78rem;color:var(--t3);text-align:center}
+    .flegal{margin-top:1rem;font-size:.72rem;color:var(--t3);text-align:center}
+    .form-success{display:none;padding:2rem;text-align:center}
+    .form-success.visible{display:block;animation:fadeIn .5s ease}
+    .form-success-icon{font-size:2rem;margin-bottom:1rem}
+    .form-success-title{font-size:1.1rem;font-weight:700;color:var(--t);margin-bottom:1rem}
+    .form-success-text{font-size:.95rem;color:var(--t2);line-height:1.8;margin-bottom:.5rem}
+    .form-success-sub{font-size:.85rem;color:var(--t3)}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    footer{
+      border-top:1px solid var(--border);padding:1.75rem 2rem;
+      display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;
+      padding-bottom:calc(1.75rem + env(safe-area-inset-bottom, 16px));
+    }
+    .flogo{font-size:.85rem;font-weight:700;color:var(--t)}
+    .fcopy{font-size:.75rem;color:var(--t2)}
+    .flinks{display:flex;gap:1.5rem}
+    .flinks a{font-size:.75rem;color:var(--t2);text-decoration:none;transition:color .15s}
+    .flinks a:hover{color:var(--t)}
+    .fade-up{opacity:0;transform:translateY(24px);transition:opacity 0.55s ease,transform 0.55s ease}
+    .fade-up.visible{opacity:1;transform:translateY(0)}
+    .faq-wrap.fade-up.visible{overflow:visible}
+    .svc-grid .svc-card:nth-child(1){transition-delay:0s}
+    .svc-grid .svc-card:nth-child(2){transition-delay:0.1s}
+    .svc-grid .svc-card:nth-child(3){transition-delay:0.2s}
+    .fw-grid .fw-card:nth-child(1){transition-delay:0s}
+    .fw-grid .fw-card:nth-child(2){transition-delay:0.08s}
+    .fw-grid .fw-card:nth-child(3){transition-delay:0.16s}
+    .fw-grid .fw-card:nth-child(4){transition-delay:0.24s}
+    .fw-grid .fw-card:nth-child(5){transition-delay:0.32s}
+    .fw-grid .fw-card:nth-child(6){transition-delay:0.40s}
+    @media(max-width:960px){
+      .nav-links{display:none}
+      .svc-grid{grid-template-columns:1fr;gap:1.25rem}
+    }
+    @media(max-width:768px){
+      section:not(:last-of-type){padding-bottom:80px}
+      .pain-grid,.fg{grid-template-columns:1fr}
+      .fw-grid{grid-template-columns:repeat(2,1fr)}
+      .cta-head{padding:1.25rem 1.25rem 1rem}
+      .form-body{padding:1rem 1.25rem 1.5rem}
+      .fg{gap:8px;margin-bottom:8px}
+    }
+    @media(max-width:600px){
+      section{padding:64px 0}
+      .hero-stats{grid-template-columns:1fr}
+      nav{padding:0 1.25rem}
+      .container{padding:0 1.25rem}
+      .fw-grid{grid-template-columns:1fr}
+      .report-box{grid-template-columns:1fr}
+      footer{flex-direction:column;align-items:flex-start;gap:0.75rem}
+      .flinks{flex-wrap:wrap}
+      .fw-card{padding:1rem;gap:.4rem}
+      #contact{padding-bottom:calc(64px + env(safe-area-inset-bottom,24px))}
+    }
+    @media (hover: none){
+      .svc-card:hover{background:var(--bg-card);border-color:var(--border);transform:none;box-shadow:none}
+      .svc-card.hot:hover{background:var(--bg-hi);border-color:var(--bmd);box-shadow:none;transform:none}
+      .res-card:hover{transform:none;border-color:var(--border);box-shadow:none}
+      .fw-card:hover{border-color:var(--border)}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo-wrap">
+      <a href="#" class="logo">Broker<em>.deal</em></a>
+      <a href="https://t.me/broker_deal" class="tg-icon" target="_blank" aria-label="Telegram">
+        <svg viewBox="0 0 24 24" width="20" height="20" style="display:block; transform: translate(-1px, 0.5px);">
+          <path d="M21.92 3.11C21.78 3 21.6 2.94 21.41 2.94c-.14 0-.29.03-.43.1L3.11 10.3c-.41.17-.61.62-.48 1.03.1.3.37.5.68.52l4.9.36 1.84 5.9c.1.32.38.54.71.55.02 0 .04 0 .06 0 .31-.01.59-.18.73-.45l1.9-3.5 4.6 3.4c.2.15.44.23.69.23.1 0 .21-.01.31-.04.36-.11.63-.4.71-.76l3-13.5c.07-.35-.04-.71-.3-.93zM8.33 11.55l8.1-4.94-5.64 5.7c-.12.12-.19.28-.2.45l-.13 2.45-2.13-3.66z" fill="white"/>
+        </svg>
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#cases">Результаты</a></li>
+      <li><a href="#forwhom">Для кого</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#contact" class="nav-btn">Оставить заявку</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="container">
+      <div class="hero-inner fade-up">
+        <div class="badge"><div class="dot"></div>Работаем с оборудованием HoReCa</div>
+        <h1>Вы покупаете б/у оборудование.<br>Продавец знает о нём всё.<br><span class="dim">Вы&#160;— нет.</span></h1>
+        <p class="hero-sub">Проверяем состояние, торгуемся с продавцом, контролируем сделку. Полностью на вашей стороне.</p>
+        <p class="hero-risk">Один скрытый дефект стоит дороже всей нашей работы.<br>Мы его находим до оплаты.</p>
+        <div class="hero-acts">
+          <a href="#contact" class="btn btn-w">Проверить оборудование <span class="arr">→</span></a>
+          <a href="#services" class="btn btn-g">Как мы работаем</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hs"><div class="hs-n">от 1 дня</div><div class="hs-l">Срок экспресс-проверки</div></div>
+          <div class="hs"><div class="hs-n">3 формата</div><div class="hs-l">Под любую ситуацию</div></div>
+          <div class="hs"><div class="hs-n">63 000 ₽</div><div class="hs-l">Средняя экономия клиента</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pain">
+    <div class="container">
+      <h2 class="fade-up">Рынок б/у оборудования<br>не защищает покупателя</h2>
+      <p class="sub fade-up">Продавец всегда знает о технике больше вас. И это его главное преимущество на переговорах.</p>
+      <div class="pain-grid fade-up">
+        <div class="pain-text">
+          <p>Печь за <strong>180 000 ₽</strong>. Внешне идеально. Через три недели — замена теплообменника за 60 000 ₽. Продавец «ничего не знал».</p>
+          <p>Кофемашина за <strong>280 000 ₽</strong>. Наш диагноз: износ бойлера, реальная цена — 195 000 ₽. Сторговались за час.</p>
+          <p>Это не невезение. Это структурный дисбаланс: продавец владеет историей, покупатель — деньгами и надеждой.</p>
+        </div>
+        <div class="callout">
+          <div class="cl">Суть проблемы</div>
+          <p><strong>Вы принимаете решение о сделке на 100–500 тысяч рублей, не имея полной картины.</strong></p>
+          <p style="margin-top:1rem">Мы убираем этот перекос — не формальным отчётом, а участием в сделке от начала до конца.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2 class="fade-up">Выберите формат под вашу ситуацию</h2>
+      <p class="sub fade-up">Не знаете, что нужно — опишите ситуацию в заявке, разберёмся вместе.</p>
+      <div class="svc-grid">
+        <div class="svc-card fade-up" data-rate="Экспресс-проверка — 5 000 ₽" onclick="event.stopPropagation(); selectRateAndScroll(this);">
+          <div class="sit">Уже нашли вариант</div>
+          <div class="svc-name">Экспресс-проверка</div>
+          <div class="svc-price">5 000 <span>₽</span></div>
+          <div class="svc-desc">Получите чёткий вывод: стоит брать или нет — и почему. Дальше действуете самостоятельно.</div>
+          <ul class="svc-list">
+            <li>Запрос документов и истории у продавца</li>
+            <li>Проверка по чек-листу, фото и видео</li>
+            <li>Оценка реальной рыночной цены</li>
+            <li>Итоговый вывод с аргументами</li>
+            <li>Срок: 1 рабочий день</li>
+            <li class="svc-limit">Торг, документы и передача — не входят</li>
+          </ul>
+        </div>
+        <div class="svc-card hot fade-up" data-rate="Полное сопровождение — 31 800 ₽" onclick="event.stopPropagation(); selectRateAndScroll(this);">
+          <div class="sit hi">Хотите полный контроль</div>
+          <div class="svc-name">Полное сопровождение</div>
+          <div class="svc-price">31 800 <span>₽</span></div>
+          <p class="svc-hint">Обычно окупается одной корректировкой цены</p>
+          <div class="svc-desc">Мы ведём сделку от проверки до передачи оборудования. Закрытая сделка — без сюрпризов после оплаты.</div>
+          <ul class="svc-list">
+            <li>Всё из экспресс-проверки</li>
+            <li>Технический осмотр по протоколу</li>
+            <li>Переговоры о цене с данными на руках</li>
+            <li>Проверка юридических документов</li>
+            <li>Контроль передачи оборудования</li>
+            <li>Срок: 2–4 рабочих дня</li>
+          </ul>
+          <div class="svc-tag">Наиболее востребованное</div>
+        </div>
+        <div class="svc-card fade-up" data-rate="Подбор под запрос — 54 600 ₽" onclick="event.stopPropagation(); selectRateAndScroll(this);">
+          <div class="sit">Хотите делегировать задачу полностью</div>
+          <div class="svc-name">Подбор под запрос</div>
+          <div class="svc-price">54 600 <span>₽</span></div>
+          <div class="svc-desc">Вы занимаетесь рестораном. Мы занимаемся оборудованием. Скажите что нужно — найдём, проверим, проведём сделку. Вы включаетесь только на финальном решении.</div>
+          <ul class="svc-list">
+            <li>Анализ задачи, формирование ТЗ</li>
+            <li>Поиск и отбор 3–5 лучших вариантов</li>
+            <li>Полное сопровождение по лучшему объекту</li>
+            <li>Отчёт по всем рассмотренным вариантам</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cases">
+    <div class="container">
+      <h2 class="fade-up">Примеры из практики</h2>
+      <p class="sub fade-up">Реальные ситуации, в которых участие брокера изменило исход сделки.</p>
+      <div class="carousel-wrap fade-up">
+        <div class="carousel" id="carousel">
+          <div class="res-card"><div class="res-type">Кофемашина · Экспресс-проверка</div><div class="res-name">Выявлен износ ключевого узла</div><div class="res-was">Цена продавца: 280 000 ₽</div><div class="res-got">195 000 ₽</div><div class="res-badge">Сэкономлено 85 000 ₽</div><div class="res-note">Проверка заняла 1 день. Торг прошёл с конкретными данными — продавец согласился.</div></div>
+          <div class="res-card"><div class="res-type">Конвектомат · Полное сопровождение</div><div class="res-name">Цена завышена относительно рынка</div><div class="res-was">Цена продавца: 210 000 ₽</div><div class="res-got">170 000 ₽</div><div class="res-badge">Сэкономлено 40 000 ₽</div><div class="res-note">Рыночный анализ показал переоценку на 20%. Переговоры — один звонок с аргументами.</div></div>
+          <div class="res-card"><div class="res-type">Тестомес · Подбор под запрос</div><div class="res-name">Подобрали за 3 дня в рамках бюджета</div><div class="res-was">Бюджет клиента: до 350 000 ₽</div><div class="res-got">Куплено за 265 000 ₽</div><div class="res-badge">Сэкономлено 85 000 ₽</div><div class="res-note">Клиент открывал пекарню и не знал рынок. Нашли три варианта, провели сделку по лучшему под ключ.</div></div>
+          <div class="res-card"><div class="res-type">Холодильная витрина · Полное сопровождение</div><div class="res-name">Два собственника, спорные документы</div><div class="res-was">Цена продавца: 185 000 ₽</div><div class="res-got">Сделка приостановлена</div><div class="res-badge">Юридический риск устранён</div><div class="res-note">Выяснилось два собственника с незакрытым спором. Клиент дождался чистого оформления и вошёл в сделку безопасно.</div></div>
+          <div class="res-card"><div class="res-type">Посудомоечная машина · Экспресс-проверка</div><div class="res-name">Оборудование в лизинговом обременении</div><div class="res-was">Цена продавца: 95 000 ₽</div><div class="res-got">Сделка не состоялась</div><div class="res-badge">Избежал правового риска</div><div class="res-note">Продавец не раскрыл что техника в лизинге. Проверка документов остановила сделку до оплаты.</div></div>
+          <div class="res-card"><div class="res-type">Холодильный стол · Полное сопровождение</div><div class="res-name">Оборудование в хорошем состоянии, цена справедливая</div><div class="res-got">145 000 ₽</div><div class="res-badge">Сделка подтверждена</div><div class="res-note">Торговаться было не за что — техника соответствовала заявленному. Клиент купил уверенно, зная что не переплачивает.</div></div>
+          <div class="res-card"><div class="res-type">Слайсер · Экспресс-проверка</div><div class="res-name">Продавец отказался от проверки</div><div class="res-was">Цена продавца: 45 000 ₽</div><div class="res-got">Сделка не состоялась</div><div class="res-badge">Риск зафиксирован</div><div class="res-note">Отказ от проверки — сам по себе сигнал. Клиент отказался от сделки, через неделю нашёл другой вариант чище и дешевле.</div></div>
+          <div class="res-card"><div class="res-type">Пароконвектомат · Экспресс-проверка</div><div class="res-name">Состояние соответствует цене, небольшой торг</div><div class="res-was">Цена продавца: 320 000 ₽</div><div class="res-got">305 000 ₽</div><div class="res-badge">Сэкономлено 15 000 ₽</div><div class="res-note">Техника в порядке, цена близка к рынку. Небольшой торг прошёл — клиент вошёл в сделку со спокойной головой.</div></div>
+        </div>
+        <div class="carousel-nav">
+          <button class="carousel-btn" id="prev">←</button>
+          <button class="carousel-btn" id="next">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="report">
+    <div class="container">
+      <h2 class="fade-up">Что вы получаете на руки</h2>
+      <p class="sub fade-up">После каждой проверки клиент получает письменный вывод. Не устный — письменный.</p>
+      <div class="report-box fade-up">
+        <div class="report-item"><div class="report-ico">📋</div><div class="report-txt"><strong>Техническое состояние</strong>Что проверено, что выявлено, что вызывает вопросы.</div></div>
+        <div class="report-item"><div class="report-ico">💰</div><div class="report-txt"><strong>Оценка рыночной цены</strong>Реальная стоимость объекта на момент проверки.</div></div>
+        <div class="report-item"><div class="report-ico">⚠️</div><div class="report-txt"><strong>Риски и рекомендация</strong>Брать, торговаться или отказаться — с аргументами.</div></div>
+        <div class="report-item"><div class="report-ico">📝</div><div class="report-txt"><strong>История и документы</strong>Что удалось установить по истории эксплуатации.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="forwhom">
+    <div class="container">
+      <h2 class="fade-up">Вы здесь, если…</h2>
+      <p class="sub fade-up">Любая из этих ситуаций — повод не идти в сделку в одиночку.</p>
+      <div class="fw-grid">
+        <div class="fw-card fade-up"><div class="fw-ico">🍽</div><div class="fw-title">Открываете первое заведение</div><div class="fw-desc">Закупаете технику впервые и не хотите переплатить или получить сюрприз на старте.</div></div>
+        <div class="fw-card fade-up"><div class="fw-ico">📦</div><div class="fw-title">Расширяете кухню</div><div class="fw-desc">Покупаете несколько позиций сразу — каждая сделка несёт свои риски.</div></div>
+        <div class="fw-card fade-up"><div class="fw-ico">🔍</div><div class="fw-title">Не понимаете реальную цену</div><div class="fw-desc">Рынок непрозрачен — непонятно, нормальная ли цена или продавец завышает.</div></div>
+        <div class="fw-card fade-up"><div class="fw-ico">👤</div><div class="fw-title">Нет технического специалиста</div><div class="fw-desc">В команде некому поручить осмотр — доверять продавцу на слово не хочется.</div></div>
+        <div class="fw-card fade-up"><div class="fw-ico">⏱</div><div class="fw-title">Нет времени на проверку</div><div class="fw-desc">Не хочется тратить дни на переписки, осмотры и разбор документов самому.</div></div>
+        <div class="fw-card fade-up"><div class="fw-ico">⚡</div><div class="fw-title">Уже нашли вариант</div><div class="fw-desc">Всё выглядит нормально, но интуиция говорит: стоит перепроверить перед оплатой.</div></div>
+      </div>
+      <div class="fw-row">
+        <p class="fw-txt">Если риск есть — нужен контроль.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container" style="max-width:780px">
+      <h2 class="fade-up">Частые вопросы</h2>
+      <div class="faq-wrap fade-up">
+        <div class="faq-item">
+          <div class="faq-q">Как проходит сделка, шаг за шагом? <span class="plus"></span></div>
+          <div class="faq-a"><div class="faq-a-inner"><ul><li>Вы оставляете заявку и описываете задачу или конкретный объект.</li><li>Мы уточняем детали и фиксируем формат работы.</li><li>Эксперт выходит на продавца: запрашивает документы, историю, проводит проверку.</li><li>Вы получаете вывод: техническое состояние, реальная цена, риски.</li><li>При полном сопровождении — участвуем в переговорах и контролируем передачу.</li></ul></div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Стоит ли это своих денег? <span class="plus"></span></div>
+          <div class="faq-a"><div class="faq-a-inner">В большинстве сделок стоимость сопровождения перекрывается результатом — снижением цены или предотвращённым ремонтом. Экспресс-проверка за 5 000 ₽ помогла снизить цену на 85 000 ₽, или отказаться от техники с неисправностью на 70 000 ₽ ремонта. Гарантию конкретной суммы мы не даём — результат зависит от объекта и продавца.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Кто проводит проверку? <span class="plus"></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Действующие инженеры с опытом в сервисных центрах и на производстве. Мы отбираем экспертов по чек-листу и проверяем качество их работы после каждой сделки.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Вы несёте ответственность за состояние оборудования? <span class="plus"></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Мы отвечаем за качество проверки и корректность выводов на момент диагностики. Проверка существенно снижает риск, но не делает оборудование новым и не отменяет естественный износ. Итоговое решение о покупке всегда остаётся за клиентом.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Что если продавец откажется от проверки? <span class="plus"></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Отказ от проверки — сам по себе сигнал. Мы фиксируем его, объясняем что это означает, и рекомендуем не входить в сделку. Это часть нашей работы.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Вы работаете по всей России? <span class="plus"></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Да, работаем удалённо по всей России. Связываемся с продавцом, запрашиваем фото, видео и документы. Для сегмента HoReCa этого достаточно для полноценной диагностики — география не ограничена.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Зачем платить, если можно посмотреть самому? <span class="plus"></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Можно. Но за 30 минут осмотра вы увидите меньше, чем знает продавец. Мы знаем, где обычно прячутся проблемы в каждом типе оборудования — и задаём нужные вопросы раньше, чем они станут вашими.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Как оформляется работа? <span class="plus"></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Перед началом работы фиксируем договорённости письменно — формат, объём, стоимость. После оплаты эксперт приступает. Итоговый вывод передаётся в письменном виде.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Как происходит оплата? <span class="plus"></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Оплата до начала работы. Принимаем перевод на карту или по реквизитам. Чек и подтверждение — после оплаты.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Что происходит после закрытия сделки? <span class="plus"></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Мы не исчезаем после передачи оборудования. Если возникают вопросы — разбираем. Если эксперт пропустил дефект который был виден при проверке — возвращаем стоимость услуги. Если продавец скрыл информацию — помогаем разобраться с ним, выступаем на вашей стороне. Каждый случай разбираем отдельно.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Вы работаете только с ресторанами? <span class="plus"></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Нет, HoReCa — наша база, но мы проверяем любое профессиональное оборудование для общепита, отелей, пекарен, столовых и пищевых производств.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Как вы выходите на связь после заявки? <span class="plus"></span></div>
+          <div class="faq-a"><div class="faq-a-inner">Основное общение ведём в Telegram — это быстро и удобно для обеих сторон. Если Telegram у вас нет, оставьте номер телефона и напишите в поле «Что нужно» как вам удобнее связаться — WhatsApp, звонок, другой мессенджер. Найдём способ.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container" style="max-width:780px">
+      <div class="cta-box fade-up">
+        <div class="cta-head">
+          <h2>Продавец готовится к сделке. Вы тоже.</h2>
+          <p class="sub" style="max-width:100%">Оставьте заявку — разберём ситуацию и скажем, какой формат подойдёт.</p>
+          <p class="cta-geo">Работаем удалённо по всей России — география не ограничена.</p>
+        </div>
+        <div class="form-body">
+          <form id="lf">
+            <div class="fg">
+              <div class="ff"><label>Имя <span style="color:var(--blue)">*</span></label><input type="text" placeholder="Как к вам обращаться" required autocomplete="name"></div>
+              <div class="ff"><label>Telegram <span style="color:var(--blue)">*</span></label><input type="text" id="tgInput" placeholder="@username" required autocomplete="off" inputmode="url" lang="en"></div>
+              <div class="ff"><label>Телефон</label><input type="tel" id="phoneInput" value="+7" placeholder="+7 999 000 00 00" autocomplete="tel"></div>
+              <div class="ff full"><label>Что нужно — оборудование или задача</label><textarea id="taskField" maxlength="300" placeholder="Например: кофемашина La Cimbali за 280 тыс., хочу проверить перед покупкой"></textarea></div>
+              <div class="ff full"><label>Формат работы</label>
+                <select id="rateSelect">
+                  <option value="Не определился — помогите выбрать">Не определился — помогите выбрать</option>
+                  <option value="Экспресс-проверка — 5 000 ₽">Экспресс-проверка — 5 000 ₽</option>
+                  <option value="Полное сопровождение — 31 800 ₽">Полное сопровождение — 31 800 ₽</option>
+                  <option value="Подбор под запрос — 54 600 ₽">Подбор под запрос — 54 600 ₽</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-w fsub">Отправить заявку <span class="arr">→</span></button>
+            <p class="fresponse">Ответим в течение 30 минут в рабочее время</p>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="form-success-icon">✓</div>
+            <div class="form-success-title">Заявка принята</div>
+            <div class="form-success-text">Пока другие надеются на честность продавца —<br>вы уже на шаг впереди.</div>
+            <div class="form-success-sub">Свяжемся в Telegram в течение 30 минут в рабочее время.</div>
+          </div>
+          <p class="flegal"><span style="color:var(--blue)">*</span> — обязательные поля. Оставляя заявку, вы соглашаетесь с обработкой персональных данных.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="flogo">Broker.deal</div>
+    <div class="flinks">
+      <a href="#">Оферта</a>
+      <a href="#">Политика конфиденциальности</a>
+    </div>
+    <div class="fcopy">© 2026 — Broker.deal</div>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(el => {
+        if (el.isIntersecting) {
+          el.target.classList.add('visible');
+          obs.unobserve(el.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+    const carousel = document.getElementById('carousel');
+    const cardWidth = 336;
+
+    document.getElementById('next').addEventListener('click', () => {
+      carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
+    });
+
+    document.getElementById('prev').addEventListener('click', () => {
+      if (carousel.scrollLeft <= 0) {
+        carousel.scrollLeft = cardWidth * carousel.children.length;
+      }
+      carousel.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+    });
+
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        q.parentElement.classList.toggle('active');
+      });
+    });
+
+    const tgInput = document.getElementById('tgInput');
+    tgInput.addEventListener('input', () => {
+      if (/[А-Яа-яЁё]/.test(tgInput.value)) {
+        tgInput.setCustomValidity('Telegram должен быть без кириллицы');
+      } else {
+        tgInput.setCustomValidity('');
+      }
+      if (tgInput.value && !tgInput.value.startsWith('@')) {
+        tgInput.value = '@' + tgInput.value.replace(/^@+/, '');
+      }
+    });
+
+    const phoneInput = document.getElementById('phoneInput');
+    phoneInput.addEventListener('input', () => {
+      let digits = phoneInput.value.replace(/\D/g, '');
+      if (digits.startsWith('8')) digits = '7' + digits.slice(1);
+      if (!digits.startsWith('7')) digits = '7' + digits;
+      if (digits.length > 11) digits = digits.slice(0, 11);
+      phoneInput.value = '+' + digits;
+    });
+    phoneInput.addEventListener('paste', (e) => {
+      e.preventDefault();
+      let pasted = (e.clipboardData || window.clipboardData).getData('text');
+      let digits = pasted.replace(/\D/g, '');
+      if (digits.startsWith('8')) digits = '7' + digits.slice(1);
+      if (!digits.startsWith('7')) digits = '7' + digits;
+      if (digits.length > 11) digits = digits.slice(0, 11);
+      phoneInput.value = '+' + digits;
+    });
+
+    const taskField = document.getElementById('taskField');
+    const counter = document.createElement('div');
+    counter.style.fontSize = '.7rem';
+    counter.style.color = 'var(--t3)';
+    counter.style.textAlign = 'right';
+    taskField.parentNode.appendChild(counter);
+    taskField.addEventListener('input', () => {
+      counter.textContent = taskField.value.length + ' / 300';
+    });
+
+    window.selectRateAndScroll = function(card) {
+      const rate = card.getAttribute('data-rate');
+      const select = document.getElementById('rateSelect');
+      if (select && rate) select.value = rate;
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    };
+
+    document.getElementById('lf').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const name = this.querySelector('input[type=text]').value;
+      const tg = document.getElementById('tgInput').value;
+      const phone = this.querySelector('input[type=tel]').value;
+      const task = this.querySelector('textarea').value;
+      const rate = this.querySelector('select').value;
+      const phoneClean = phone && phone.replace(/\D/g, '').length > 1 ? '+' + phone.replace(/\D/g, '') : 'не указан';
+      const text = `🔔 Новая заявка\n\n👤 Имя: ${name}\n✈️ Telegram: ${tg}\n📞 Телефон: ${phoneClean}\n📋 Задача: ${task || 'не указана'}\n💼 Формат: ${rate}`;
+      try {
+        await fetch(`https://api.telegram.org/bot8377256851:AAHlHkRXNLb_ULdKJDZZtlqLvovRHtpl8pU/sendMessage`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ chat_id: 920130270, text })
+        });
+        document.getElementById('lf').style.display = 'none';
+        document.getElementById('formSuccess').classList.add('visible');
+      } catch {
+        alert('Ошибка отправки. Попробуйте ещё раз или напишите напрямую.');
+      }
+    });
+  </script>
+
+</body>
+</html>
